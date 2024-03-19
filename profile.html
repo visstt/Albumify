@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/profile.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header>
+        <div class="logo_section">
+            <h1>Albumify</h1>
+        </div>
+        <div class="nav">
+            <div class="nav_btns">
+                <button class="nav_btn1"><h1>Главная</h1></button>
+                <button class="nav_btn2"><h1>Поделиться</h1></button>
+            </div>
+            <div class="nav_search">
+                <input type="search" placeholder="Поиск">
+            </div>
+        </div>
+        <div class="user_section">
+            <img src="./Images/download.svg" alt="">
+            <img src="./Images/profile_user.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="person_information">
+            <img src="./Images/logo_user.jpg" alt="" width="150px" height="150px">
+            <h1>Никнейм</h1> 
+        </div>
+        <div class="btn_container">
+            <!--  -->
+            <a href="#popup2"><button class="btn_profile">Добавить альбом</button></a>
+
+            <div id="popup2" class="overlay light">
+                <div class="popup">
+                    <a class="cancel" href="#">✕</a> 
+                    <div class="content">
+                        <div>Создание альбома</div>
+                        <input type="text" placeholder="Название">
+                        <input type="text" placeholder="Описание">
+                        
+                        <form class="type">
+                            <div class="checkboxes">
+                                <label>Публичный</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="checkboxes">
+                                <label>Приватный</label>
+                                <input type="checkbox">
+                            </div>
+                            <div class="checkboxes">
+                                <label>Закрытый</label>
+                                <input type="checkbox">
+                            </div>
+                        </form>
+                        
+                        <button class="Btn_Popup">Создать</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+            <a href="./"><button class="btn_profile">Изменить профиль</button></a>            
+        </div>
+
+        <div class="text_container">
+            <div class="text">Общие альбомы</div>
+            <div class="text">Личные альбомы</div>
+            <div class="text">Закрытые альбомы</div>
+        </div>
+
+        <div class="albums">
+            <div class="album"></div>
+            <div class="album"></div>
+        </div>
+    </main>
+</body>
+</html>
